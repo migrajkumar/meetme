@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "meetme-101",
+    "production": "meetme-101"
+  },
+  "targets": {},
+  "etags": {}
+}
