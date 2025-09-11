@@ -1,1 +1,196 @@
-abc
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+            color: #E5E7EB;
+        }
+
+        .text-lime-400 { color: #A3E635; }
+        .bg-purple-600 { background-color: #9333ea; }
+        .ring-lime-400 { --tw-ring-color: #A3E635; }
+        .ring-purple-600 { --tw-ring-color: #9333ea; }
+
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(to right, #A3E635, #9333ea);
+        }
+
+        .card {
+            background-color: rgba(25, 25, 25, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-lime {
+            background-color: #A3E635;
+            color: #000000;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-lime:hover {
+            background-color: #84cc16;
+            transform: translateY(-2px);
+        }
+
+        .btn-purple {
+            background-color: #9333ea;
+            color: #ffffff;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-purple:hover {
+            background-color: #7e22ce;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-black text-gray-200">
+
+    <!-- Header & Hero Section -->
+    <header class="container mx-auto px-6 py-12 text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-none mb-4">
+            Hello, I'm a <span class="gradient-text">Software Engineer.</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-8">
+            I'm a self-taught software engineer with a passion for building beautiful and functional applications. I specialize in web and mobile development, focusing on modern frameworks to create seamless user experiences.
+        </p>
+        <div class="flex justify-center gap-4">
+            <a href="#skills" class="btn-lime font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300">My Skills</a>
+            <a href="#contact" class="btn-purple font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300">Get in Touch</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <!-- About Section -->
+        <section id="about" class="mb-24">
+            <div class="card p-8 md:p-12 rounded-3xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-lime-400">A Little About My Journey</h2>
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-1/2">
+                        <p class="text-gray-300 mb-4 text-lg">
+                            My journey into software engineering is a story of curiosity and a relentless drive to learn. I'm a **self-taught software engineer**, which means I thrive on problem-solving and exploring new technologies on my own. I believe that the best learning comes from building, and I've spent countless hours creating projects from scratch to master my craft.
+                        </p>
+                        <p class="text-gray-300 text-lg">
+                            I've been working as a Software Engineer at **Addble Solutions Private Limited** since August 2020, where I've had the opportunity to apply my skills to real-world challenges. This experience has been invaluable in shaping me into the professional I am today.
+                        </p>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center items-center">
+                        <div class="w-full max-w-md h-full bg-purple-600 rounded-3xl p-8 transform rotate-3 shadow-2xl transition-transform duration-500 hover:rotate-0">
+                            <blockquote class="text-white text-lg italic font-light relative">
+                                &ldquo;The only way to learn is by doing. And the only way to do is by building.&rdquo;
+                                <cite class="block text-right mt-4 not-italic text-sm font-normal text-gray-200">- My Philosophy</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-24">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">My Toolkit</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Skill Card: Angular -->
+                <div class="card p-8 rounded-2xl shadow-lg ring-2 ring-inset ring-purple-600">
+                    <div class="flex items-center gap-4 mb-4">
+                        <svg class="h-10 w-10 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0L0 4.5l1.8 11.4L12 24l10.2-8.1L24 4.5zM12 2.2L2.7 5.7l1.3 8.3L12 21.2l7.8-7.2l1.3-8.3zM12 8.7L5.4 17.5h13.2z"/>
+                        </svg>
+                        <h3 class="text-2xl font-bold">Angular</h3>
+                    </div>
+                    <p class="text-gray-400">
+                        I use Angular to build robust and scalable single-page applications. I'm skilled in reactive programming with RxJS and creating component-based architectures.
+                    </p>
+                </div>
+                <!-- Skill Card: Flutter -->
+                <div class="card p-8 rounded-2xl shadow-lg ring-2 ring-inset ring-lime-400">
+                    <div class="flex items-center gap-4 mb-4">
+                        <svg class="h-10 w-10 text-lime-400" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.9 0l-5.8 5.8 4.2 4.2L19.1 4.2zM21 7.2l-4.2-4.2-4.2 4.2L16.8 12zM0 16.8l5.8 5.8 4.2-4.2-4.2-4.2zM7.2 24l4.2-4.2 4.2 4.2-4.2 4.2z"/>
+                        </svg>
+                        <h3 class="text-2xl font-bold">Flutter</h3>
+                    </div>
+                    <p class="text-gray-400">
+                        I build cross-platform mobile apps for iOS and Android using Flutter and Dart. I'm proficient in state management, UI design, and API integration.
+                    </p>
+                </div>
+                <!-- Skill Card: Backend/Database -->
+                <div class="card p-8 rounded-2xl shadow-lg ring-2 ring-inset ring-purple-600">
+                    <div class="flex items-center gap-4 mb-4">
+                        <svg class="h-10 w-10 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M22 6h-6v4h6V6zM14 10H8V6h6v4zM22 14h-6v-4h6v4zM14 18H8v-4h6v4zM22 22h-6v-4h6v4zM14 22H8v-4h6v4zM6 6H0V2h6v4zM6 10H0V6h6v4zM6 14H0v-4h6v4zM6 18H0v-4h6v4zM6 22H0v-4h6v4z"/>
+                        </svg>
+                        <h3 class="text-2xl font-bold">Backend & DB</h3>
+                    </div>
+                    <p class="text-gray-400">
+                        My skills extend to backend development, including API design and database management with technologies like Node.js, Express, and Firestore.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-24">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="card p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-bold text-lime-400 mb-2">Portfolio Website</h3>
+                    <p class="text-gray-400 mb-4">A single-page website built with HTML, Tailwind CSS, and JavaScript. This site is a showcase of my design and front-end skills, with a focus on responsiveness and modern aesthetics.
+                    </p>
+                    <a href="#" class="btn-lime font-semibold py-2 px-6 rounded-full inline-block">View Project</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="card p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-bold text-purple-600 mb-2">To-Do App (Flutter)</h3>
+                    <p class="text-gray-400 mb-4">A robust To-Do application developed using Flutter. It features a clean UI, state management, and the ability to add, edit, and delete tasks. It showcases my ability to build polished mobile experiences.
+                    </p>
+                    <a href="#" class="btn-purple font-semibold py-2 px-6 rounded-full inline-block">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-lime-400">Let's Connect</h2>
+            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-8">
+                I'm always open to new opportunities and collaborations. Feel free to reach out to me!
+            </p>
+            <form class="max-w-xl mx-auto space-y-4">
+                <input type="text" placeholder="Your Name" class="w-full p-4 rounded-xl card focus:outline-none focus:ring-2 ring-lime-400 transition-all duration-200 text-gray-200 placeholder-gray-500">
+                <input type="email" placeholder="Your Email" class="w-full p-4 rounded-xl card focus:outline-none focus:ring-2 ring-purple-600 transition-all duration-200 text-gray-200 placeholder-gray-500">
+                <textarea placeholder="Your Message" rows="5" class="w-full p-4 rounded-xl card focus:outline-none focus:ring-2 ring-lime-400 transition-all duration-200 text-gray-200 placeholder-gray-500"></textarea>
+                <button type="submit" class="w-full btn-lime font-semibold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-shadow duration-300">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="text-center py-8 text-gray-500 text-sm">
+        <p>&copy; 2025. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
