@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <script src="script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -61,7 +60,7 @@
 <body class="bg-black text-gray-200">
 
     <!-- Header & Hero Section -->
-    <header class="container mx-auto px-6 py-12 text-center">
+    <header class="container mx-auto px-6 py-8 text-center">
         <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-none mb-4">
             Hello, I'm <span class="gradient-text">Mig Rajkumar, a Software Engineer.</span>
         </h1>
@@ -73,9 +72,26 @@
         </div>
     </header>
 
-    <main class="container mx-auto px-6 py-12">
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="container mx-auto px-6 mb-16">
+        <div class="card p-8 md:p-12 rounded-3xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-lime-400 text-center">Beyond the Code</h2>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-full">
+                    <p class="text-gray-300 mb-4 text-lg">
+                        When I'm not in front of a screen, you can find me content with my own company, finding joy in the worlds of music and Minecraft. I am deeply passionate about electro, tropical, EDM, and country music, and I find a similar sense of creation in building new worlds block-by-block. Both music and programming, much like Minecraft, are about crafting something complex and beautiful from a set of simple components. Whether it's weaving a song from notes, building an application with code, or constructing a world in a game, they all resonate with my passion for logical design.
+                    </p>
+                    <p class="text-gray-300 text-lg">
+                        The best ideas come to life in these quiet, solitary moments, where my focus is complete and creativity flows without interruption. It's in this peaceful solitude that I find my greatest inspiration.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-8">
         <!-- About Section -->
-        <section id="about" class="mb-24">
+        <section id="about" class="mb-16">
             <div class="card p-8 md:p-12 rounded-3xl">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6 text-lime-400">A Little About My Journey</h2>
                 <div class="flex flex-col md:flex-row items-center gap-8">
@@ -100,7 +116,7 @@
         </section>
 
         <!-- Company Section -->
-        <section id="company" class="mb-24">
+        <section id="company" class="mb-16">
             <div class="card p-8 md:p-12 rounded-3xl text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6 text-purple-600">My Work at Addble</h2>
                 <p class="text-gray-300 text-lg max-w-2xl mx-auto mb-6">
@@ -111,7 +127,7 @@
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="mb-24">
+        <section id="skills" class="mb-16">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">My Toolkit</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Skill Card: Angular -->
@@ -169,6 +185,8 @@
     <footer class="text-center py-8 text-gray-500 text-sm">
         <p>&copy; 2025. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 
     <script>
         // Smooth scrolling for navigation links
